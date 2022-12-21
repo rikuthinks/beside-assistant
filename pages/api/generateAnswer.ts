@@ -22,7 +22,7 @@ export default async function handler(
     // Latest GPT-3 models: https://beta.openai.com/docs/models
     model: "text-davinci-003",
     prompt: generatePrompt(req.body.question),
-    temperature: 0.6,
+    temperature: 0,
     max_tokens: 1024,
   });
   res.status(200).json({ result: completion.data.choices[0].text! });
@@ -39,6 +39,8 @@ function generatePrompt(question: Props) {
   A: Let’s think step by step. There are 5 shelves of mystery books. Each shelf has 8 books. So that’s 40 mystery books. There are 4 shelves of picture books. Each shelf has 8 books. So that’s 32 picture books. 40 + 32 = 72 books. The answer is 72.
   Q: Wendy uploaded 45 pictures to Facebook. She put 27 pics into one album and put the rest into 9 different albums. How many pictures were in each album?
   A: Let’s think step by step. First, we know that Wendy uploaded 45 pictures in total. Second, we know that Wendy put 27 pictures into one album. That means that Wendy put the remaining 18 pictures into 9 different albums. That means that each album would have 2 pictures. The answer is 2.
+  Q: What is the chemical formula for water?
+  A: The answer (just one entity) is H2O because water is composed of two hydrogen atoms bonded to one oxygen atom, resulting in the chemical formula H2O.
   Q: A trivia team had 7 members total, but during a game 2 members didn’t show up. If each member that did show up scored 4 points, how many points were scored total?
   A: Let’s think step by step. There were 7 members on the team, but 2 members didn’t show up. That means that there were 5 members that did show up. Each member that showed up scored 4 points. So if 5 members each scored 4 points, then the total number of points scored would be 5*4=20. The answer is 20.
   Q: For Halloween Katie and her sister combined the candy they received. Katie had 8 pieces of candy while her sister had 23. If they ate 8 pieces the first night, how many pieces do they have left? 
