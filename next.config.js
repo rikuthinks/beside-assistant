@@ -10,6 +10,7 @@ module.exports = {
   },
   images: {
     domains: [
+      "i.imgur.com",
       "avatars.githubusercontent.com",
       "githubusercontent.com",
       "lh3.googleusercontent.com",
