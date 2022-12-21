@@ -80,9 +80,9 @@ const ChatInput = ({ session }: Props) => {
       id: idOpenAi,
       message: openAiData.result,
       created_at: Date.now(),
-      username: "CircuitAI",
-      profilePic: "/circuitai-avatar.png",
-      email: "openAi.02W39r48a7F02t9@gmail.com",
+      username: "Beside AI",
+      profilePic: "https://i.imgur.com/MzMAhKf.png",
+      email: "AgentV1@beside.ai",
     };
 
     const uploadOpenAiAnswerToRedis = async () => {
