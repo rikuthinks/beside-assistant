@@ -11,7 +11,7 @@ const SignInPage = (props: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-[80vh] flex flex-col space-y-8 bg-white"
+      className="h-[80vh] flex flex-col space-y-8 bg-zinc-800"
     >
       <div className="flex flex-grow">
         <Image
