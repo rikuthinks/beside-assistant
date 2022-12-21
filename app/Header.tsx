@@ -44,7 +44,7 @@ const Header = async (props: Props) => {
               height={52}
               width={50}
             />
-            <p className="text-[#74E6DA]">Welcome to CircuitAI</p>
+            <p className="text-cyan-600">Welcome to Beside AI</p>
           </div>
         </div>
         <Link
