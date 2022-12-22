@@ -116,7 +116,7 @@ const ChatInput = ({ session }: Props) => {
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter message here..."
+        placeholder="What's on your mind?"
         className="resize flex-1 rounded border border-gray-400 transition-all focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent py-2 px-4 disabled:opacity-50 disabled:cursor-not-allowed"
       />
       <button
