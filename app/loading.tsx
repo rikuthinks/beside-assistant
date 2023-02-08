@@ -3,7 +3,7 @@ type Props = {};
 const loading = (props: Props) => {
   return (
     <div className="text-center pt-8">
-      <p className="text-stone-300 pb-5 animate-pulse">Loading CircuitAI</p>
+      <p className="text-stone-300 pb-5 animate-pulse">Loading...</p>
       <div role="status">
         <svg
           className="inline mr-2 w-16 h-16 text-stone-200 animate-spin fill-cyan-600"
